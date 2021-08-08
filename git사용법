@@ -24,7 +24,18 @@ git commit -m 'README.MD 여기에 작성해 '  커밋하는 방법
 
 git status  현재 상태 보기 
 
-git remote add origin 주소 -> 원격의 저장소에 연결을 해주는 과정 이 과정을 통해 나중에 여기로 보내줄수 있다. 
+
+//아래 과정을 통해서 origin이라는 이름으로 원격의 저장소를 연결해줌 
+git remote add origin 주소  
+
 
 git push origin master  -> origin에 현재 주소가 연결되어 있고 push를 통해서 원격 저장소에 저장해준다 .
 
+-------------------------------------------------------
+브랜치 만들기 
+
+git branch -a (-a 를 붙여서 브랜치를 실행하게 되면 원격 저장소에 있는 브랜치도 확인이 가능하다)
+
+git branch signin(원하는 이름 작성) 새로운 브랜치를 하나 만들어 준다. 
+
+git checkout signin (원하는 브랜치로 이동한다.)
