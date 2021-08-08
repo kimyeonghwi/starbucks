@@ -1,0 +1,106 @@
+.signin {
+  margin-top: 120px;
+  padding: 100px 0 150px;
+  background-image: url('./images/signin_bg.jpg');
+  /* 반복안함 */
+  background-repeat: no-repeat; 
+  /* 이미지를 정중앙 위치  */
+  background-position: center;
+  /* 스크롤 할때 뷰포트 고정되서 스크롤 되도록  */
+  background-attachment: fixed;
+  /*뷰포트에 더 넢은 곳이 커버되도록  */
+  background-size: cover;
+}
+
+.signin h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 700px;
+  margin-bottom: 24px;
+  font-size: 30px;
+}
+
+.signin__card{
+width: 500px;
+margin: 0 auto;
+border-radius: 6px;
+background-color: #f6f5f0;
+box-shadow: 2px 2px 20px rgba(0,0,0,.3);
+color: #555;
+}
+.signin__card h2{
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.signin__card h2 strong{
+  color: #006633;
+  font-weight: 700;
+}
+
+
+.signin__card form{
+  /* 내부 여백  */
+  padding: 30px 22px;
+}
+
+.signin__card form input{
+  /* 전체 크기 다쓰기  */
+  width: 100%;
+  /* 아래 띄워주기 */
+  margin-bottom: 12px;
+  /* 내부에 패딩주기  */
+  padding: 15px;
+  /* 실선주기  */
+  border: 1px solid #ddd;
+  /* 보더 깍아주기 */
+  border-radius: 4px;
+  /*보더를 사용하니까 포커스 되었을때 속성 없애주고 */
+  outline: none;
+  /* 넘치지 않도록 해주고  */
+  box-sizing: border-box;
+  font-size: 14px;
+}
+/* 타입이 submit인것만 선택 하겠다 . */
+.signin__card form [type="submit"]{
+  background-color: #006633;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.signin__card form p{
+  font-size: 12px;
+  color: #006633;
+  text-align: center;
+}
+.signin__card .actions{
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.signin__card .actions a{
+  /* 요소의 증가 너비 1비율 */
+  flex-grow: 1;
+  /* 기본 너비는 0이다  */
+  flex-basis: 0;
+
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #555;
+  border-right: 1px solid #ddd;
+
+}
+
+.signin__card .actions a:last-child{
+   border-right: none;
+}
+
+.signin__card .actions a:hover{
+  text-decoration: underline;
+}
