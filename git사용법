@@ -2,17 +2,29 @@
 
 1. git init - 처음 깃 생성 
 
-2.  git config --global core.autocrlf true  첫 셋팅 
+- 첫 셋팅 개행 문자 설정 -
+2.  git config --global core.autocrlf true 
 
+-사용자 정보 -
+-커밋(버전생성)을 위한 정보 등록
+3. git config --global user.name 'kimyeonghwi'  이름 추가 
 
+4. git config --global user.email 'pwrkim12@gmail.com' 이메일 추가 
 
-git add .  추가 
+-구성확인-
+5. git config --global --list 
 
-git log  리스트 출력
+---- 여기까지 해주면 일단 깃에 저장해준것이다. ---- 
+
+git add .  이 명령어로 지금 폴더들 전부 추가 해주고 
+
+git log  현재 리스트들 확인 할수 있다. 
 
 git commit -m 'README.MD 여기에 작성해 '  커밋하는 방법 
 
 git status  현재 상태 보기 
 
-git push origin master  -> origin에 현재 주소가 연결되어있다.
+git remote add origin 주소 -> 원격의 저장소에 연결을 해주는 과정 이 과정을 통해 나중에 여기로 보내줄수 있다. 
+
+git push origin master  -> origin에 현재 주소가 연결되어 있고 push를 통해서 원격 저장소에 저장해준다 .
 
