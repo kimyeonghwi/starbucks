@@ -1,6 +1,6 @@
 터미널에서 하는법
 
-1. git init - 처음 깃 생성 
+1. git init - 처음 깃 생성 (현재 프로젝트에서 변경사항 추적(버전관리)을 시작한다는 의미 )
 
 - 첫 셋팅 개행 문자 설정 -
 2.  git config --global core.autocrlf true 
